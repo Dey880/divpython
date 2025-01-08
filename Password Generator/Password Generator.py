@@ -24,5 +24,5 @@ if "d" in type:
 for n in range(length):
     password.append(random.choice(characters))
 password = ''.join(password)
-os.system("cls")
+# os.system("cls")
 print(password)

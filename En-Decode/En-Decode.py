@@ -1,7 +1,7 @@
 import os
 
-clear = lambda: os.system("clear")
-clear()
+clear = lambda: os.system("cls")
+# clear()
 alphabet_lower = "abcdefghijklmnopqrstuvwxyzæøå"
 alphabet_upper = alphabet_lower.upper()
 
@@ -38,8 +38,6 @@ def decode(message, key):
 e_d = input("Encode or decode?   ")
 
 seed = int(input("Seed(int):   "))
-print("do a number :P")
-encode()
 message = input("Message:   ")
 
 encoded_message = encode(message, seed)

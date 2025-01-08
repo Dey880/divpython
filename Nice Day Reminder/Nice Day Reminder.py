@@ -1,12 +1,12 @@
 import tkinter as tk
 
-class VirusAlertApp:
+class NiceDayReminderApp:
     def __init__(self, master):
         self.master = master
-        master.title("Scary Virus Alert")
+        master.title("Nice day reminder")
         master.geometry("400x300")
         
-        self.label = tk.Label(master, text="You have a virus", font=("Arial", 20), fg="black")
+        self.label = tk.Label(master, text="Remember to have a nice day!", font=("Arial", 20), fg="black")
         self.label.pack()
         
         self.button_yes = tk.Button(master,
@@ -33,14 +33,14 @@ class VirusAlertApp:
         self.button_yes.pack(pady=20)
         self.button_no.pack(pady=20)
         
-        self.label1 = tk.Label(master, text="stealing your data", font=("Arial", 20), fg="black")
-        self.update_text_state = ["stealing your data .", "stealing your data ..", "stealing your data ..."]
+        self.label1 = tk.Label(master, text="sending good vibes", font=("Arial", 20), fg="black")
+        self.update_text_state = ["sending good vibes .", "sending good vibes ..", "sending good vibes ..."]
         self.current_text_index = 0
         
         master.bind("<BackSpace>", lambda e: self.reset())
         
     def handle_yes_response(self):
-        self.label.config(text="ahaha")
+        self.label.config(text="Nice!")
         self.button_yes.pack_forget()
         self.button_no.pack_forget()
         self.label1.pack()
@@ -57,7 +57,7 @@ class VirusAlertApp:
         self.button_no.pack_forget()
         
     def reset(self):
-        self.label.config(text="You have a virus")
+        self.label.config(text="Remember to have a nice day")
         self.label.pack()
         self.button_yes.pack(pady=20)
         self.button_no.pack(pady=20)
@@ -65,5 +65,5 @@ class VirusAlertApp:
         self.current_text_index = 0
         
 root = tk.Tk()
-app = VirusAlertApp(root)
+app = NiceDayReminderApp(root)
 root.mainloop()
