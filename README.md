@@ -2,4 +2,8 @@ Her er nesten alt jeg har jobbet med i læpet av yff timene i år, i hver av map
 ```bash
 .py
 ```
-filen og en README, hvor det vil stå litt om koden
+filen og en 
+```bash
+README.md
+```
+hvor det vil stå litt om koden
