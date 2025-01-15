@@ -1,6 +1,6 @@
 import os
 
-clear = lambda: os.system("cls")
+clear = lambda: os.system('cls' if os.name == 'nt' else 'clear')
 # clear()
 alphabet_lower = "abcdefghijklmnopqrstuvwxyzæøå"
 alphabet_upper = alphabet_lower.upper()

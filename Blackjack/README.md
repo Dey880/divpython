@@ -1,0 +1,1 @@
+har ikke jobbet med i skoletid
